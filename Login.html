@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form đăng ký thành viên</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            label {
+                float: left;
+                width: 100px
+            }
+            input {
+                margin-bottom: 0px;
+            }
+            .error {
+                color: red;
+            }
+            button { 
+                background-color: lightgreen;
+            }
+        </style>
+        <script type="text/javascript">
+        function getInfo() {
+            var username = document.getElementById("username").value;;
+            var email = document.getElementById("email").value;;
+            var password = document.getElementById("password").value;;
+            if(username == ""){
+                document.getElementById("errorname").innerHTML="Vui lòng nhập đầy đủ tên";
+            }
+            else {
+                document.getElementById("errorname").innerHTML= "";
+            }
+            if(email == ""){
+                document.getElementById("erroremail").innerHTML=" Email không được bỏ rỗng";
+            }
+            else {
+                document.getElementById("erroremail").innerHTML= "";
+            }
+            if(password == ""){
+                document.getElementById("errorpass").innerHTML="Password không được rỗng";
+            }
+            else {
+                document.getElementById("errorpass").innerHTML= "";
+            }
+        }
+        
+        </script>
+    </head>
+    <body>
+        <form action="" method="post">
+            <h1>CREATE ACCOUNT</h1>
+            <label> Username</label> <br>
+            <input type="text" name="username" id="username" value="" />
+            <span id="errorname" class="error"></span>
+            <p>Đây sẽ là tên người dùng của bạn. Bạn có thể thêm tên tổ chức của mình sau.</p> 
+            <label> Email address</label> <br>
+            <input type="text" name="email" id="email" value="" />
+            <span id="erroremail" class="error"></span>
+            <p>Thỉnh thoảng, chúng tôi sẽ gửi thông tin cập nhật về tài khoản của bạn đến hộp thư đến này.<br> Chúng tôi sẽ không bao giờ 
+                    chia sẻ địa chỉ email của bạn với bất kỳ ai.</p> 
+            <label> Password</label> <br>
+            <input type="text" name="password" id="password" value="" /> 
+            <span id="errorpass" class="error"></span>
+            <p>Nhập mật khẩu của bạn vào đây.</p>
+            <label>&nbsp;</label>
+            <button onclick="getInfo(); return false"; >Create an account</button>
+        </form>
+    </body>
+</html>

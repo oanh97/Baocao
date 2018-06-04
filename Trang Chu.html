@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Shop Zalora</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+     body{
+         margin-left: 10%;
+         margin-right: 10%;
+     } 
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .collapse ul li a {
+        color: red;
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background: black;
+      margin-left: 10%;
+         margin-right: 10%;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: lightblue;
+      padding: 25px;
+    
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:100px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  #search-box{
+      width: 300px;
+      height: 33px;
+      float: left;
+      margin-top: 11px;
+      border: 1px solid #000000;
+      position: relative;
+      background: #f7f7f7;
+  }
+  #textsearch{
+      width: 260px;
+      height: 30px;
+      border: 0;
+      background: #f7f7f7;
+  }
+  #search-button{
+      width: 34px;
+      height: 30px;
+      border: 0;
+      position: absolute;z-index: 99;top: 0;right: 0;
+      background:url(tapanh/TK.png) no-repeat;
+  }
+  .footer_01 ul{
+      list-style-type: none;
+  }
+  .tintuc{
+      width: 400px;
+      height:400px ;
+
+  }
+ .tintuc img {
+     width: 300px;
+     height: 300px;
+ }
+.container-fluid .row{
+ background: #f7f7f7;
+}
+hr.styled-hr {
+    border-top: 1px solid #aaaaaa !important;
+    background: none;
+}
+
+hr.styled-hr {
+    background-color: #eee;
+    background-color: rgba(0,0,0,0.13);
+    border: 0pt none;
+    color: #eee;
+    color: rgba(0,0,0,0.13);
+    height: 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+user agent stylesheet
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand">
+                <img src ="./tapanh/zaloza1.PNG"/>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="Trang Chu.html">Trang chủ</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nam
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Quan Au.html">Quần âu</a></li>
+                  <li><a href="Quan Jeans Nam.html">Quần bò</a></li>
+                  <li><a href="Ao So Mi.html">Áo sơ mi</a></li>
+                  <li><a href="Ao Phong.html">Áo phông</a></li> 
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nữ
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Dam Nu.html">Đầm</a></li>
+                  <li><a href="Quan Nu.html">Quần</a></li>
+                  <li><a href="Ao Nu.html">Áo</a></li> 
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Trẻ em
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Bé Trai.html">Bé Trai</a></li>
+                  <li><a href="Be Gai.html">Bé Gái</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="search-box">
+                    <form id="search-form">
+                        <input type="text" placeholder="Search for here..." id="textsearch"/>
+                        <button type="submit" id="search-button"></button>
+                    </form>
+                </li>
+                <li><a href="login1.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="tapanh/Bia.PNG" alt="Image" style="height: 500px;">
+
+        <div class="carousel-caption">
+        
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="tapanh/Bia1.PNG" alt="Image" style="height: 500px">
+        <div class="carousel-caption">
+        
+        </div>      
+      </div>
+      <div class="item">
+        <img src="tapanh/Bia2.jpg" alt="Image" style="height: 500px">
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="container-fluid text-left">
+
+    <div class="row"> 
+            <h2>Tin Tức </h2>
+            <div class="col-sm-6">  
+                <div class="tintuc" style="margin-top: 50px">
+                    <h3> Thời trang thay đổi cuộc sống </h3> 
+                    <video width="500" controls>
+                        <source src="VTV3 - THỜI TRANG CÔNG SỞ MC FASHION.mp4" type="video/mp4">
+                      </video>
+                      
+                </div> 
+            </div> 
+            <div class="col-sm-6">  
+                    <div class="tintucleft" style="margin-top: 50px">
+                        <ul>
+                        <li><a href="https://www.elle.vn/the-gioi-thoi-trang/cac-phong-cach-thoi-trang-co-ban-ma-ban-nen-biet"> Các phong cách thời trang cơ bản bạn nên biết  </a> </li>
+                        <li> <a href="https://www.elle.vn/xu-huong-thoi-trang/8-xu-huong-thoi-trang-se-tro-lai-manh-hon-trong-nam-2018">  8 xu hướng thời trang sẽ trở lại mạnh mẽ hơn trong năm 2018  </a></li>
+                        <li> <a href="https://baomoi.com/xu-huong-thoi-trang-du-bao-gay-bao-nam-2018/c/25073984.epi">  Xu hướng thời trang dự báo gây bão năm 2018 </a></li>
+                        <li> <a href="https://news.zing.vn/nhung-man-trinh-dien-an-tuong-o-tuan-le-thoi-trang-viet-nam-2018-post836927.html">Những màn trình diễn ấn tượng ở Tuần lễ thời trang Việt Nam năm 2018  </a></li>
+                        <li> <a href="https://www.elle.vn/bo-suu-tap/nhung-bst-dep-tuan-le-thoi-trang-new-york-thu-dong-2018">Những BST đẹp nhất tuần lễ thời trang New York thu - đông 2018/2019  </a></li>
+                        </ul>
+                    </div>
+            </div>
+    
+    </div>
+    <style type="text/css">
+			.tintucleft ul li a {
+				text-decoration: none;
+				font-size: 20pt;
+				color: #000000;
+			}
+    </style>
+    <div>
+            <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+            <hr class="styled-hr" style="width:100%;">
+            <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+    </div>
+    <div class="row"> 
+        <h2>Hàng bán chạy</h2>
+        <div class="col-sm-3">  
+            <div class="sp">
+                <img src="tapanh/p7.jpg">
+                <h4>Áo Phông Nam ATC 18 - 0066</h4>
+                <p>Giá: 450.000đ</p>
+            </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/q5.jpg">
+                    <h4>Quần jean nữ Q09</h4>
+                    <p>Giá: 350.000đ</p>
+
+                </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/trai15.jpg">
+                    <h4>Đồ Vest Bé Trai </h4>
+                    <p>Giá: 500.000đ</p>
+
+                </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/g12.jpg">
+                    <h4> ĐẦM CÔNG CHÚA </h4>
+                    <p>Giá: 200.000đ</p>
+
+                </div> 
+        </div>
+       <div class = "col-sm-12">
+            <p align = "center">
+                <a href="Hang Ban Chay.html">  <button style="margin: center ">  <b> Xem Thêm » </b></button> </a>
+            </p>
+
+       </div>
+
+    </div>
+    <div>
+        <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+        <hr class="styled-hr" style="width:100%;">
+        <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+    </div>
+    <div class="row"> 
+        <h2>Đồ nam</h2>
+        <div class="col-sm-3">  
+            <div class="sp">
+                <img src="tapanh/p1.jpg">
+                <h4>Áo Phông Nam ATC18 - 0160</h4>
+                <p>Giá: 395.000đ</p>
+
+            </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/sm1.jpg">
+                    <h4>Áo Sơ Mi Nam SMR18 - 0171</h4>
+                    <p>Giá: 395.000đ</p>
+
+                    
+                </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="./ảnh quần âu/qa2.jpg">
+                    <h4> Quần Âu Q - 1115 </h4>
+                    <p>Giá: 550.000đ</p>
+
+                </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/j6.jpg">
+                    <h4>Quần Jean Nam QC18 - 0139 </h4>
+                    <p>Giá: 690.000đ</p>
+
+                </div> 
+        </div>
+        <div class = "col-sm-12">
+                <p align = "center">
+                    <a href="Do Nam.html">  <button style="margin: center ">  <b> Xem Thêm » </b></button> </a>
+                </p>
+    
+        </div>
+    </div>
+    <div>
+            <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+            <hr class="styled-hr" style="width:100%;">
+            <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+    </div>
+    <div class="row"> 
+        <h2>Đồ nữ </h2>
+        <div class="col-sm-3">  
+            <div class="sp">
+                <img src="tapanh/d15.jpg">
+                <h4>Đầm họa tiết DS5609 </h4>
+                <p>Giá: 550.000đ</p>
+
+            </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/a4.jpg">
+                    <h4>Áo nữ kiểu A071 </h4>
+                    <p>Giá: 350.000đ</p>
+
+                </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/q13.jpg">
+                    <h4>Quần soc jean  </h4>
+                    <p>Giá: 570.000đ</p>
+
+                </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/d8.jpg">
+                    <h4> Váy ren hoa nhã nhặn DS6753 </h4>
+                    <p>Giá: 325.000đ</p>
+
+                </div> 
+        </div>
+        <div class = "col-sm-12">
+                <p align = "center">
+                    <a href="Do Nu.html">  <button style="margin: center ">  <b> Xem Thêm » </b></button> </a>
+                </p>
+    
+        </div>
+    </div>
+    <div>
+            <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+            <hr class="styled-hr" style="width:100%;">
+            <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+        </div>
+    <div class="row"> 
+        <h2> Trẻ em</h2>
+        <div class="col-sm-3">  
+            <div class="sp">
+                <img src="tapanh/g6.jpg" style=>
+                <h4>BỘ UNI0259</h4>
+                <p>Giá: 300.000đ</p>
+
+            </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/g17.jpg">
+                    <h4>BỘ UNI0234</h4>
+                    <p>Giá: 200.000đ</p>
+
+                </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/trai5.jpg">
+                    <h4>BỘ UNI0255 </h4>
+                    <p>Giá: 300.000đ</p>
+                </div> 
+        </div>
+        <div class="col-sm-3">  
+                <div class="sp">
+                    <img src="tapanh/trai6.jpg">
+                    <h4> BỘ UNI0256  </h4>
+                    <p>Giá: 340.000đ</p>
+                </div> 
+        </div>
+        <div class = "col-sm-12">
+                <p align = "center">
+                    <a href="Tre Em.html">  <button style="margin: center ">  <b> Xem Thêm » </b></button> </a>
+                </p>
+    
+        </div>
+    </div>
+</div> 
+<style type="text/css">
+    .sp {
+        float: left;
+        width: 230px;
+        height: 400px;
+        text-align: center;
+    }
+
+    .sp img {
+        width: 220px;
+        height: 300px;
+    }
+    .row{
+        float: left;
+    }
+</style>
+<footer class="container-fluid text-left">
+    <h1 style="text-align: center"> Zalora </h1>
+    <h3 style="text-align: center">Hotline:091238774</h3>		
+</footer>
+
+</body>
+</html>

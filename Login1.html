@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form đăng nhập</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            label {
+                float: left;
+                width: 100px
+            }
+            input {
+                margin-bottom: 0px;
+            }
+            .error {
+                color: red;
+            }
+            button { 
+                background-color: lightgreen;
+            }
+        </style>
+        <script type="text/javascript">
+        function getInfo() {
+            var taikhoan = document.getElementById("taikhoan").value;;
+            var matkhau = document.getElementById("matkhau").value;;
+            if(taikhoan == ""){
+                document.getElementById("errortk").innerHTML="Nhập tài khoản của bạn vào đây";
+            }
+            else {
+                document.getElementById("errortk").innerHTML= "";
+            }
+            if(matkhau == ""){
+                document.getElementById("errormk").innerHTML="Nhập mật khẩu của bạn vào đây";
+            }
+            else {
+                document.getElementById("errormk").innerHTML= "";
+            }
+        }
+        
+        </script>
+    </head>
+    <body>
+        <form action="" method="post">
+            <h1>ĐĂNG NHẬP</h1>
+            <label> Tài khoản</label> <br>
+            <input type="text" name="taikhoan" id="taikhoan" value="" />
+            <span id="errortk" class="error"></span><br>
+             
+            <label> Mật khẩu</label> <br>
+            <input type="text" name="matkhau" id="matkhau" value="" />
+            <span id="errormk" class="error"></span><br>
+            <p>
+               <label>&nbsp;</label>
+               <button onclick="getInfo(); return false"; >Đăng nhập</button>
+               <a class="reset_pass" href="#">Quên mật khẩu?</a>
+            </p>
+            <p>
+               <a class="to_register" href="Login.html">Create account</a>
+            </p>
+        </form>
+    </body>
+</html>
